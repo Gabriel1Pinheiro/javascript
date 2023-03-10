@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hora de Codar!</title>
+    <link rel="stylesheet" href="">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+
+    </main>
+
+    <script>
+
+        //1- Escreva um programa em Javascript e crie uma variável chamada "nome_do_carro" e atribua-a um valor "Fusca". Exiba-a ao usuário.
+
+        var nome_do_carro = "Fusca"
+        document.write(nome_do_carro)
+
+        //2- Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a mensagem "Olá, [NomeDoUsuario]".
+
+        var nome = prompt("Informe seu nome")
+        document.write(`Olá, ${nome} seja bem vindo`)
+
+        //3-Escreva um programa em Javascript em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário. Agora o programa deve exibir a mensagem "Olá, [NomeDoUsuario], sua idade é [idade]".
+
+        var sobreNome = prompt("Informe seu sobrenome")
+        var idade = prompt(`Informe sua idade`)
+        document.write(`Seu sobrenome é ${sobreNome} e sua idade é ${idade} correto?`);
+
+
+        //4- Considerando a figura abaixo, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas. O usuário irá informar os valores de cada variável.
+
+
+        //retângulo
+
+        var base = Number(prompt("Por favor, me informe a base"));
+        var altura = Number(prompt("Por favor, me informe a altura"));
+        let total = base * altura;
+
+        document.write(`A área do retângulo é ${total}`);
+
+        //quadrado
+
+        var lado = Number(prompt("Insira a medida do primeiro lado do quadrado"));
+        let medida = parseFloat(lado); // Converte o valor de entrada em um número
+        let area = lado * lado;
+
+        document.write(`A área do quadrado é ${area}`);
+
+        // Losango
+
+        let diagonalMaior = parseFloat(prompt("Informe  o valor da diagonal maior do losango"));
+        let diagonalMenor = parseFloat(prompt("Informe  o valor da diagonal menor do losango"));
+
+        let soma = (diagonalMaior * diagonalMenor) / 2;
+
+        document.write(`A área do losango é ${soma}`)
+
+
+        //Trapezio
+        let trapezioMaior = parseFloat(prompt("Informe  o valor da base maior do trapezio"));
+        let trapezioMenor = parseFloat(prompt("Informe  o valor da base menor do trapezio"));
+        let trapezioAltura = parseFloat(prompt("Digite o valor da altura do trapézio:"));
+        let somaTrapezio = ((trapezioMaior + trapezioMenor) * trapezioAltura) / 2;
+
+        document.write(`A área do Trapezio é ${somaTrapezio}`)
+
+        //paralelograma
+
+        var baseParalelograma = parseFloat(prompt("Digite o valor da base do paralelogramo"));
+        var alturaParalelograma = parseFloat(prompt("Digite o valor da altura do paralelogramo "));
+
+        let somaParalelogra = baseParalelograma * alturaParalelograma
+
+        document.write(`A área do paralelograma é ${somaParalelogra}`)
+
+        //triângulo
+
+        let trianguloBase = parseFloat(prompt("Informe o valor da base do Triângulo"));
+        let trianguloAltura = parseFloat(prompt("Informe o valor da altura do Triângulo"));
+
+        let somaTriangulo = (trianguloBase * trianguloAltura) / 2;
+
+        document.write(`A área do triângulo é ${somaTriangulo}`)
+
+
+        //circulo
+
+        let raio = parseFloat(prompt("Digite o valor do raio do círculo:"));
+        let circuloArea = Math.PI * Math.pow(raio, 2); // Calcular a área do círculo
+
+        console.log(`A área do círculo é ${circuloArea}`);
+
+    </script>
+</body>
+
+</html>
